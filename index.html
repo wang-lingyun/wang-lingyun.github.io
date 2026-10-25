@@ -152,15 +152,12 @@
             <article>
               <p class="note-meta note-meta--new">Oct 2026 · arXiv · New preprint</p>
               <p>
-                New preprint: <a href="https://arxiv.org/abs/2610.07118"><em>AMBER: Training Long-Horizon Web Agents through
-                Append-Only Memory</em></a>. Over long, multi-step trajectories, trained overwrite memories tend to delete key
-                facts and the corrective feedback the environment gives back. AMBER (Append-only Memory Bank for Evidence
-                Retention) lets an agent jointly learn to reason, act, and write free-form memory while an append-only rule
-                guarantees retention by construction, so it can be trained end-to-end with reinforcement learning from outcome
-                rewards without curated SFT data. On WebArena Lite, AMBER improves average success over overwrite-based memory by
-                4.09 points and the fraction of tasks solved in five repeated runs by 4.8 points, matching an overwrite baseline
-                trained on far more expensive curated supervision — all within a practical token budget. The
-                <a href="https://github.com/agentic-foundation-modeling-research/amber">code is open source</a>.
+                New preprint: <a href="https://arxiv.org/abs/2610.07118"><em>AMBER</em></a> trains long-horizon web agents
+                with append-only memory and outcome-based RL. We also built <strong>reusable asynchronous RL infrastructure
+                with SGLang and Miles</strong>, designed for agent training beyond AMBER. It separates inference from
+                environment execution, overlaps model generation with browser interactions, and isolates each rollout’s
+                browser and website state for scalable training.
+                <a href="https://github.com/agentic-foundation-modeling-research/amber">Code and infrastructure are open source</a>.
               </p>
             </article>
             <article>
